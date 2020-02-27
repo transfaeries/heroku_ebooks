@@ -5,6 +5,8 @@ import twitter
 from mastodon import Mastodon
 import markov
 from bs4 import BeautifulSoup
+import dropAt
+
 try:
     # Python 3
     from html.entities import name2codepoint as n2c
@@ -233,6 +235,7 @@ if __name__ == "__main__":
                     sys.exit()
 
             if not DEBUG:
+                ebook_status=dropAt(ebook_status)
                 if ENABLE_TWITTER_POSTING:
                     status = api.PostUpdate(ebook_status)
                 if ENABLE_MASTODON_POSTING:
