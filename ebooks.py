@@ -5,7 +5,7 @@ import twitter
 from mastodon import Mastodon
 import markov
 from bs4 import BeautifulSoup
-import dropAt
+from dropAt import dropAt
 
 try:
     # Python 3
