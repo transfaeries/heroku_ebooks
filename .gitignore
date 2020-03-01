@@ -4,3 +4,5 @@
 __pycache__
 *.csv
 .env/
+faebot
+faebot_masto
